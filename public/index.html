@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Добрострой — стройматериалы</title>
+  <title>Добрострой — Главная</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,107 +12,56 @@
       <div class="brand">
         <div class="logo">ДС</div>
         <div>
-          <h1>ДОБРОСТРОЙ</h1>
-          <p>Магазин строительно-отделочных материалов</p>
+          <h1>Добрострой</h1>
+          <p>Магазин строительно-отделочных материалов. Добро пожаловать!</p>
         </div>
       </div>
-
-      <form class="login" action="#" method="post">
-        <label>
-          Логин
-          <input type="text" name="login" placeholder="Введите логин">
-        </label>
-        <label>
-          Пароль
-          <input type="password" name="password" placeholder="Введите пароль">
-        </label>
-        <button type="submit">Войти</button>
-      </form>
+      <p class="header-contacts">
+        <a href="tel:+79001234567">+7 (900) 123-45-67</a> ·
+        <a href="mailto:info@dobrostroy.ru">info@dobrostroy.ru</a>
+      </p>
     </header>
 
-    <nav class="main-nav card">
-      <a href="#catalog">Каталог</a>
-      <a href="#offers">Акции</a>
-      <a href="#services">Услуги</a>
-      <a href="#contacts">Контакты</a>
+    <nav class="main-nav card" aria-label="Меню сайта">
+      <ul>
+        <li><a class="active" href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="account.html">Гостевая</a></li>
+      </ul>
     </nav>
 
+    <hr class="separator">
+
     <main class="content card">
-      <aside class="sidebar">
-        <h2>Разделы</h2>
-        <a href="#">Сухие смеси</a>
-        <a href="#">Краски и эмали</a>
-        <a href="#">Плитка и керамогранит</a>
-        <a href="#">Инструменты</a>
-      </aside>
-
       <section class="article">
-        <h2 id="catalog">Строим и обновляем вместе</h2>
-        <p>
-          В магазине <strong>«Добрострой»</strong> вы найдёте всё для ремонта:
-          от базовых строительных смесей до чистовой отделки и декора.
-          Мы помогаем собрать комплект материалов под ваш бюджет и этап работ.
-        </p>
-        <p>
-          Для профессионалов и частных клиентов доступны
-          <em>консультации по подбору материалов</em>, доставка по городу и самовывоз.
-          Все позиции в каталоге проходят контроль качества.
-        </p>
+        <h2>О нас</h2>
+        <p>«Добрострой» помогает частным клиентам и профессиональным бригадам подбирать материалы для ремонта и строительства.</p>
 
-        <div class="table-wrap" id="offers">
-          <h3>Текущие предложения</h3>
-          <table>
-            <tr>
-              <td rowspan="2">Категория</td>
-              <td>Скидка</td>
-              <td>Срок</td>
-            </tr>
-            <tr>
-              <td>до 20%</td>
-              <td>до 31 марта</td>
-            </tr>
-            <tr>
-              <td>Инструменты</td>
-              <td>до 15%</td>
-              <td>до 10 апреля</td>
-            </tr>
-          </table>
-        </div>
+        <h3>История фирмы</h3>
+        <p>Компания работает с 2015 года и регулярно расширяет ассортимент по реальным запросам клиентов.</p>
 
-        <div id="services">
-          <h3>Полезные сервисы</h3>
-          <ul>
-            <li>Колеровка красок по каталогу RAL</li>
-            <li>Резка плитки и комплектующих</li>
-            <li>Расчёт расхода материалов</li>
-          </ul>
+        <h3>Сотрудники</h3>
+        <p>Наши консультанты помогут с расчетом расхода, подбором аналогов и организацией доставки.</p>
 
-          <ol type="I">
-            <li>Консультация специалиста</li>
-            <li>Подбор материалов</li>
-            <li>Оформление доставки</li>
-          </ol>
-
-          <ol>
-            <li>Комплектация заказа
-              <ol type="a">
-                <li>Проверка наличия</li>
-                <li>Согласование замен</li>
-              </ol>
-            </li>
-            <li>Подготовка к отгрузке</li>
-            <li>Передача курьеру</li>
-          </ol>
-        </div>
-
-        <p id="contacts">
-          Адрес: ул. Строителей, 15. Телефон отдела продаж: +7 (900) 123-45-67.
-          Время работы: ежедневно с 8:00 до 21:00.
-        </p>
+        <h3>Почему выбирают нас</h3>
+        <table>
+          <tr><th>Преимущество</th><th>Описание</th></tr>
+          <tr><td>Ассортимент</td><td>Более 3000 наименований стройматериалов</td></tr>
+          <tr><td>Сервис</td><td>Колеровка, консультации, доставка в день заказа</td></tr>
+        </table>
       </section>
 
-      <div class="profile-image" aria-label="Фото стройматериалов"></div>
+      <aside class="sidebar">
+        <img src="images/hero.svg" alt="Склад Добрострой" class="hero-picture">
+        <a class="btn" href="catalog.html">Перейти в каталог</a>
+      </aside>
     </main>
+
+    <footer class="footer card">
+      <small>© Все права защищены</small>
+      <a href="https://yandex.ru/maps" target="_blank" rel="noopener">Внешняя ссылка</a>
+    </footer>
   </div>
 </body>
 </html>

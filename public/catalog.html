@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добрострой — Каталог</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="top-header card"><h1>Добрострой</h1></header>
+    <nav class="main-nav card">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a class="active" href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="account.html">Гостевая</a></li>
+      </ul>
+    </nav>
+    <hr class="separator">
+
+    <main class="content card">
+      <section class="article">
+        <h2>Каталог</h2>
+        <div class="catalog-grid">
+          <article class="product-item">
+            <img src="images/cement.svg" alt="Цемент М500" class="product-thumb">
+            <p><a href="product-cement.html">Цемент М500, 50 кг — открыть описание</a></p>
+          </article>
+          <article class="product-item">
+            <img src="images/paint.svg" alt="Краска интерьерная" class="product-thumb">
+            <p><a href="product-paint.html">Краска интерьерная, 9 л — открыть описание</a></p>
+          </article>
+        </div>
+
+        <p>Карта изображений:</p>
+        <img src="images/map-catalog.svg" alt="Карта каталога" usemap="#catalogmap" class="product-thumb">
+        <map name="catalogmap">
+          <area shape="rect" coords="20,20,300,160" href="product-cement.html" alt="Цемент">
+          <area shape="rect" coords="320,20,600,160" href="product-paint.html" alt="Краска">
+        </map>
+      </section>
+    </main>
+
+    <footer class="footer card"><small>© Все права защищены</small></footer>
+  </div>
+</body>
+</html>
