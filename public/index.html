@@ -3,115 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Учебный сайт</title>
+  <title>Добрострой — Главная</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page-shell">
     <header class="top-header card">
       <div class="brand">
-        <div class="logo">ЛОГО</div>
+        <div class="logo">ДС</div>
         <div>
-          <h1>НАЗВАНИЕ САЙТА</h1>
-          <p>Современный адаптивный шаблон</p>
+          <h1>Добрострой</h1>
+          <p>Магазин строительно-отделочных материалов. Добро пожаловать!</p>
         </div>
       </div>
-
-      <form class="login" action="#" method="post">
-        <label>
-          Логин
-          <input type="text" name="login" placeholder="Введите логин">
-        </label>
-        <label>
-          Пароль
-          <input type="password" name="password" placeholder="Введите пароль">
-        </label>
-        <button type="submit">Войти</button>
-      </form>
+      <p class="header-contacts">
+        <a href="tel:+79001234567">+7 (900) 123-45-67</a> ·
+        <a href="mailto:info@dobrostroy.ru">info@dobrostroy.ru</a>
+      </p>
     </header>
 
-    <nav class="main-nav card">
-      <a href="#section-1">Раздел 1</a>
-      <a href="#section-2">Раздел 2</a>
-      <a href="#section-3">Раздел 3</a>
-      <a href="#section-4">Раздел 4</a>
+    <nav class="main-nav card" aria-label="Меню сайта">
+      <ul>
+        <li><a class="active" href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="account.html">Гостевая</a></li>
+      </ul>
     </nav>
 
+    <hr class="separator">
+
     <main class="content card">
-      <aside class="sidebar">
-        <h2>Страницы</h2>
-        <a href="#">Страница 1</a>
-        <a href="#">Страница 2</a>
-        <a href="#">Страница 3</a>
-        <a href="#">Страница 4</a>
-      </aside>
-
       <section class="article">
-        <h2 id="section-1">Задание 2</h2>
-        <p>
-          Создать HTML-код, который воспроизводит структуру макета из примера, но с
-          <strong>современным визуальным стилем</strong>: мягкие тени, плавные скругления и
-          аккуратная типографика.
-        </p>
-        <p>
-          Используйте теги <code>p</code>, <code>br</code>, <code>h2</code>, а также выделение текста
-          <em>курсивом</em> и <strong>жирным</strong>. Можно применять 2–3 основных цвета интерфейса.
-        </p>
+        <h2>О нас</h2>
+        <p>«Добрострой» помогает частным клиентам и профессиональным бригадам подбирать материалы для ремонта и строительства.</p>
 
-        <div class="table-wrap" id="section-2">
-          <h3>Пример таблицы</h3>
-          <table>
-            <tr>
-              <td rowspan="2">Общая строка</td>
-              <td>текст</td>
-              <td>текст</td>
-            </tr>
-            <tr>
-              <td>текст</td>
-              <td>текст</td>
-            </tr>
-            <tr>
-              <td>текст</td>
-              <td>текст</td>
-              <td>текст</td>
-            </tr>
-          </table>
-        </div>
+        <h3>История фирмы</h3>
+        <p>Компания работает с 2015 года и регулярно расширяет ассортимент по реальным запросам клиентов.</p>
 
-        <div id="section-3">
-          <h3>Списки</h3>
-          <ul>
-            <li>Маркированный пункт 1</li>
-            <li>Маркированный пункт 2</li>
-            <li>Маркированный пункт 3</li>
-          </ul>
+        <h3>Сотрудники</h3>
+        <p>Наши консультанты помогут с расчетом расхода, подбором аналогов и организацией доставки.</p>
 
-          <ol type="I">
-            <li>Нумерованный пункт 1</li>
-            <li>Нумерованный пункт 2</li>
-            <li>Нумерованный пункт 3</li>
-          </ol>
-
-          <ol>
-            <li>Многоуровневый пункт
-              <ol type="a">
-                <li>Подпункт 1a</li>
-                <li>Подпункт 1b</li>
-              </ol>
-            </li>
-            <li>Многоуровневый пункт 2</li>
-            <li>Многоуровневый пункт 3</li>
-          </ol>
-        </div>
-
-        <p id="section-4">
-          Для изменения типа маркеров и нумерации можно использовать атрибуты
-          <code>type</code> и различные варианты списков.
-        </p>
+        <h3>Почему выбирают нас</h3>
+        <table>
+          <tr><th>Преимущество</th><th>Описание</th></tr>
+          <tr><td>Ассортимент</td><td>Более 3000 наименований стройматериалов</td></tr>
+          <tr><td>Сервис</td><td>Колеровка, консультации, доставка в день заказа</td></tr>
+        </table>
       </section>
 
-      <div class="profile-image" aria-label="Иллюстрация профиля"></div>
+      <aside class="sidebar">
+        <img src="images/hero.svg" alt="Склад Добрострой" class="hero-picture">
+        <a class="btn" href="catalog.html">Перейти в каталог</a>
+      </aside>
     </main>
+
+    <footer class="footer card">
+      <small>© Все права защищены</small>
+      <a href="https://yandex.ru/maps" target="_blank" rel="noopener">Внешняя ссылка</a>
+    </footer>
   </div>
 </body>
 </html>

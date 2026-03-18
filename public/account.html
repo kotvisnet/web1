@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добрострой — Гостевая</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<div class="page-shell">
+  <nav class="main-nav card"><ul><li><a href="index.html">Главная</a></li><li><a href="catalog.html">Каталог</a></li><li><a href="contacts.html">Контакты</a></li><li><a class="active" href="account.html">Гостевая</a></li></ul></nav>
+  <main class="content card single">
+    <h2>Личный кабинет, регистрация и авторизация</h2>
+    <div class="tabs">
+      <button type="button" data-tab="login" class="btn">Авторизация</button>
+      <button type="button" data-tab="register" class="btn">Регистрация</button>
+      <button type="button" data-tab="cabinet" class="btn">Кабинет</button>
+    </div>
+
+    <section id="login" class="tab-panel">
+      <label>Логин <input type="text"></label>
+      <label>Пароль <input type="password"></label>
+    </section>
+    <section id="register" class="tab-panel hidden">
+      <label>Имя <input type="text"></label>
+      <label>Email <input type="email"></label>
+      <label>Пароль <input type="password"></label>
+    </section>
+    <section id="cabinet" class="tab-panel hidden">
+      <p>Динамический элемент: выберите площадь и получите расчет.</p>
+      <label>Площадь <input type="number" id="area" value="30"></label>
+      <button type="button" class="btn" id="calcBtn">Рассчитать</button>
+      <p id="result"></p>
+    </section>
+
+    <h3>Web-компонент</h3>
+    <iframe src="catalog.html" title="Каталог во фрейме"></iframe>
+  </main>
+  <footer class="footer card"><small>© Все права защищены</small></footer>
+</div>
+</body>
+</html>
